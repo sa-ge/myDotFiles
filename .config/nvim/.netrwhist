@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/sage/.config/nvim/vim-plug'
+let g:netrw_dirhist_7='/home/sage/.config/nvim'
+let g:netrw_dirhist_6='/home/sage/.config/alacritty'
+let g:netrw_dirhist_5='/home/sage/.config'
+let g:netrw_dirhist_4='/home/sage'
+let g:netrw_dirhist_3='/home/sage/.config/alacritty'
+let g:netrw_dirhist_2='/home/sage/.config'
+let g:netrw_dirhist_1='/home/sage'
