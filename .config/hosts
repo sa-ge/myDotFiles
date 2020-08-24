@@ -1,0 +1,12 @@
+ Static table lookup for hostnames.
+# See hosts(5) for details.
+127.0.0.1    localhost
+::1          localhost
+127.0.1.1    sage.localdomain sage
+127.0.1.1    alhelaly
+127.0.1.1    firsttrain.test 
+127.0.1.1    secondtrain.test 
+127.0.1.1    store.test 
+127.0.1.1    newone.test 
+127.0.1.1    new.test 
+127.0.1.1    login.test
