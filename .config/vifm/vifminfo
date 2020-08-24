@@ -27,50 +27,50 @@ r2
 
 # Left window history (oldest to newest):
 d/home/sage/Downloads
-	music
-4
-d/home/sage/Downloads/music
-	منوعات صوتية
+	pictures
+6
+d/home/sage/Downloads/pictures
+	wall
 1
-d/home/sage/Downloads/music/منوعات صوتية
-	الفنانه كريمه جديد ونبي ونبي مسخاء افرقك 773737739...736181849.mp3
-15
-d/home/sage
-	Downloads
-2
+d/home/sage/Downloads/pictures/wall
+	..
+0
+d/home/sage/Downloads/pictures
+	..
+0
 d/home/sage/Downloads
-	music
-4
-d/home/sage/Downloads/music
-	منوعات صوتية
-1
-d/home/sage/Downloads/music/منوعات صوتية
-	الفنانه كريمه جديد ونبي ونبي مسخاء افرقك 773737739...736181849.mp3
-15
-d/home/sage
-	Downloads
-2
+	qute
+7
+d/home/sage/Downloads/qute
+	..
+0
 d/home/sage/Downloads
-	music
-4
-d/home/sage/Downloads/music
-	منوعات صوتية
+	pictures
+6
+d/home/sage/Downloads/pictures
+	wall
 1
-d/home/sage/Downloads/music/منوعات صوتية
-	الفنانه كريمه جديد ونبي ونبي مسخاء افرقك 773737739...736181849.mp3
-15
-d/home/sage
-	Downloads
-2
+d/home/sage/Downloads/pictures/wall
+	..
+0
+d/home/sage/Downloads/pictures
+	..
+0
 d/home/sage/Downloads
-	music
-4
-d/home/sage/Downloads/music
-	منوعات صوتية
+	qute
+7
+d/home/sage/Downloads/qute
+	..
+0
+d/home/sage/Downloads
+	pictures
+6
+d/home/sage/Downloads/pictures
+	wall
 1
-d/home/sage/Downloads/music/منوعات صوتية
-	جديد 2017 كليب العيد كل عام وأنتم بخير اداء أيمن يحيى & أمجد يحيى - YouTube.mp3
-16
+d/home/sage/Downloads/pictures/wall
+	photo-1485470733090-0aae1788d5af
+22
 
 # Right window history (oldest to newest):
 D/home/sage
@@ -86,16 +86,21 @@ D/home/sage/Downloads
 	
 0
 D/home/sage
-	
+	..
 0
 
 # Command line history (oldest to newest):
 :find \*.mp3
+:help 
+:help
+:execute
+:rename photo-1485470733090-0aae1788d5af Minimal-Wallpaper-For-IPhone.png
 :q
 
 # Search history (oldest to newest):
 
 # Prompt history (oldest to newest):
+pccockjk
 
 # Local filter history (oldest to newest):
 
