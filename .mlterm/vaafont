@@ -1,0 +1,9 @@
+ISO10646_UCS4_1 = MesloLGS NF 12
+ISO10646_UCS4_1_FULLWIDTH = MesloLGS NF 13
+U+0600-06FF = Noto Naskh Arabic UI 13
+U+0750-77F = Noto Naskh Arabic UI 13
+U+08A0-8FF = Noto Naskh Arabic UI 13
+U+FB50-FDFF = Noto Naskh Arabic UI 13
+U+FE70-FEFF = Noto Naskh Arabic UI 13
+U+1EE00-1EEFF = Noto Naskh Arabic UI 13
+U+1F000-1F77F = FontAwesome 12:110

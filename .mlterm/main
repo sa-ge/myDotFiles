@@ -1,0 +1,10 @@
+encoding = UTF-8
+termtype = xterm-256color
+fg_color = #f3f3f3f3f3f3
+bg_color = #272728282222
+use_anti_alias = true
+use_variable_column_width = true
+line_space = 1
+static_backscroll_mode = true
+use_extended_scroll_shortcut = true
+scrollbar_mode = none
