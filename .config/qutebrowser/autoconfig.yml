@@ -13,6 +13,15 @@ settings:
         st: config-cycle tabs.show always switching
         xb: config-cycle statusbar.hide
         xx: config-cycle statusbar.hide ;; config-cycle tabs.show always switching
+  content.autoplay:
+    global: false
+  content.notifications:
+    https://2.mol16.biz: false
+    https://3.mol16.biz: false
+    https://4.mol16.biz: false
+    https://6.mol16.biz: false
+    https://7.mol16.biz: false
+    https://9.mol16.biz: false
   downloads.location.directory:
     global: /home/sage/Downloads/qute
   fonts.completion.entry:
@@ -24,4 +33,4 @@ settings:
   statusbar.show:
     global: never
   tabs.show:
-    global: switching
+    global: always
