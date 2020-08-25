@@ -26,9 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/sage/Downloads
-	pictures
-6
 d/home/sage/Downloads/pictures
 	wall
 1
@@ -71,6 +68,9 @@ d/home/sage/Downloads/pictures
 d/home/sage/Downloads/pictures/wall
 	photo-1485470733090-0aae1788d5af
 22
+d/home/sage
+	..
+0
 
 # Right window history (oldest to newest):
 D/home/sage
