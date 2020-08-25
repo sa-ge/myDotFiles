@@ -37,3 +37,4 @@ POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 source /home/sage/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
  colorscript -r
+
