@@ -5,7 +5,6 @@ echo "2"
 echo "3"
 echo "4"
 
-
 xbindkeys
 
 # allow changing keyboard layout between English us and Arabic 

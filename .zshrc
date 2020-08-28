@@ -29,7 +29,6 @@ alias umnt="/home/sage/myScripts/Umnt.sh"
 
 alias vifm="vifmrun"
 
-
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true 
 
 
