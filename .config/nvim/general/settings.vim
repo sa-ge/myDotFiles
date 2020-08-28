@@ -16,7 +16,9 @@ let g:webdevicons_enable = 1
 let g:webdevicons_enable_nerdtree = 1
 
 
+
 syntax enable                           " Enables syntax highlighing
+set tags=tags
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=UTF-8                      " The encoding displayed

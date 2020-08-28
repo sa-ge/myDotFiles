@@ -43,6 +43,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "nerdtree git plugin 
     Plug 'Xuyuanp/nerdtree-git-plugin'
 
+    "fzf plugin 
+    
+     Plug 'junegunn/fzf', {'do': {-> fzf#install()}} 
+     Plug 'junegunn/fzf.vim'
 
+     "Vim surround  
+     Plug 'tpope/vim-surround'  
+
+
+
+
+    
 
     call plug#end()
