@@ -7,5 +7,4 @@ if [ -d /home/sage/.local/bin ] ; then
  done
  unset f
 fi
-exec compton
-
+exec compton 
