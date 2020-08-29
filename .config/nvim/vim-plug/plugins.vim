@@ -10,7 +10,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Color Theme 
+    Plug 'tomasr/molokai'
     Plug 'joshdick/onedark.vim'
+    Plug 'rafi/awesome-vim-colorschemes'
     
     " Xdebug
     Plug 'vim-vdebug/vdebug'
@@ -52,8 +54,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
      Plug 'tpope/vim-surround'  
 
 
-
+     " rmove highlited text after searching using / 
+     Plug 'haya14busa/is.vim' 
 
     
+     " sippets 
+     Plug 'honza/vim-snippets'  
+      
 
-    call plug#end()
+
+
+     
+     call plug#end()
+

@@ -14,6 +14,8 @@ let g:python_host_prog = "/bin/python2"
 let g:python_host_prog = "/bin/python2"
 let g:webdevicons_enable = 1
 let g:webdevicons_enable_nerdtree = 1
+let $LANG='en'
+
 
 
 
@@ -22,6 +24,7 @@ set tags=tags
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=UTF-8                      " The encoding displayed
+scriptencoding utf-8
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=UTF-8                  " The encoding written to file
 set ruler              			            " Show the cursor position all the time
@@ -38,6 +41,7 @@ set smarttab                            " Makes tabbing smarter will realize you
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent set laststatus=0                        " Always display the status line
+set relativenumber
 set number                              " Line numbers
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
@@ -58,6 +62,9 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+
+
 
 
  let g:vdebug_options = {
@@ -84,7 +91,7 @@ cmap w!! w !sudo tee %
 
 " color scheme
 syntax on
-colorscheme gruvbox
+colorscheme gruvbox 
 filetype on
 filetype plugin indent on
 
@@ -132,8 +139,85 @@ nmap <leader>,l  :vertical resize -4<CR>
 nmap <leader>n :NERDTree<CR>
 nmap <leader>e :bprevious<CR>:bd#<CR>
 
+" fzf mapping 
+nmap // :BLines<CR>
+nmap /// :Rg!<CR> 
+nmap ,, :Files<CR>
+
+
+
+" Mlutible Cursor alternative 
+nmap <silent> s* :let @/='\<'.expand('<cword>').'\>'<CR>cgn
+
+"always show status bar
+set laststatus=2
+
+"Use spaces instead of tabs 
+set expandtab
+"Be smart when using tabs
+set smarttab
+
+" 1 tab = 4 spaces
+set shiftwidth=4
+set tabstop=4
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => NERDTree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Uncomment to autostart the NERDTree
+" autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '►'
+let g:NERDTreeDirArrowCollapsible = '▼'
+let NERDTreeShowLineNumbers=1
+let NERDTreeShowHidden=1
+let NERDTreeMinimalUI = 1
+let g:NERDTreeWinSize=38
+
+
+" custom color highlighing
+  highlight LineNr           ctermfg=8    ctermbg=none    cterm=none
+  highlight CursorLineNr     ctermfg=7    ctermbg=8       cterm=none
+  highlight VertSplit        ctermfg=0    ctermbg=8       cterm=none
+  highlight Directory        ctermfg=4    ctermbg=none    cterm=none
+  highlight StatusLine       ctermfg=7    ctermbg=8       cterm=none
+  highlight NERDTreeClosable ctermfg=2
+  highlight NERDTreeOpenable ctermfg=8
+"  highlight String           ctermfg=9   ctermbg=none    cterm=none
+
+  
+" highlight WildMenu         ctermfg=0       ctermbg=80      cterm=none
+" highlight Folded           ctermfg=103     ctermbg=234     cterm=none
+" highlight FoldColumn       ctermfg=103     ctermbg=234     cterm=none
+" highlight DiffAdd          ctermfg=none    ctermbg=23      cterm=none
+" highlight DiffChange       ctermfg=none    ctermbg=56      cterm=none
+" highlight DiffDelete       ctermfg=168     ctermbg=96      cterm=none
+" highlight DiffText         ctermfg=0       ctermbg=80      cterm=none
+" highlight SignColumn       ctermfg=244     ctermbg=235     cterm=none
+" highlight Conceal          ctermfg=251     ctermbg=none    cterm=none
+" highlight SpellBad         ctermfg=168     ctermbg=none    cterm=underline
+" highlight SpellCap         ctermfg=80      ctermbg=none    cterm=underline
+" highlight SpellRare        ctermfg=121     ctermbg=none    cterm=underline
+" highlight SpellLocal       ctermfg=186     ctermbg=none    cterm=underline
+" highlight Pmenu            ctermfg=251     ctermbg=234     cterm=none
+" highlight PmenuSel         ctermfg=0       ctermbg=111     cterm=none
+" highlight PmenuSbar        ctermfg=206     ctermbg=235     cterm=none
+" highlight PmenuThumb       ctermfg=235     ctermbg=206     cterm=none
+" highlight TabLine          ctermfg=244     ctermbg=234     cterm=none
+" highlight TablineSel       ctermfg=0       ctermbg=247     cterm=none
+" highlight TablineFill      ctermfg=244     ctermbg=234     cterm=none
+" highlight CursorColumn     ctermfg=none    ctermbg=236     cterm=none
+" highlight CursorLine       ctermfg=none    ctermbg=236     cterm=none
+" highlight ColorColumn      ctermfg=none    ctermbg=236     cterm=none
+" highlight Cursor           ctermfg=0       ctermbg=5       cterm=none
+" highlight htmlEndTag       ctermfg=74     ctermbg=none    cterm=none
+" highlight xmlEndTag        ctermfg=114     ctermbg=none    cterm=none
 
 
 
 
- 
+
+
+
+

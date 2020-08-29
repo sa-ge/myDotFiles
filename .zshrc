@@ -28,6 +28,7 @@ alias mnt="/home/sage/myScripts/Mnt.sh"
 alias umnt="/home/sage/myScripts/Umnt.sh"
 
 alias vifm="vifmrun"
+alias ydm3="youtube-dl -x --audio-format mp3"
 
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true 
 
@@ -35,5 +36,6 @@ POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 
 source /home/sage/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
- colorscript -r
+# colorscript -r
+clear
 

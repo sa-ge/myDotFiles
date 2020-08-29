@@ -26,51 +26,51 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/sage
-	..
-0
-d/home
-	sage
-2
-d/home/sage
-	..
-0
-d/home
-	sage
-2
-d/home/sage
-	..
-0
-d/home/sage/.dwm
-	..
-0
-d/home/sage
-	Pics
-5
 d/home/sage/Pics
-	da232j1-2666f453-5819-4c89-9e0e-d5fa0d47b2ec.png
-1
+	..
+0
 d/home/sage
-	Pics
-5
-d/home
-	sage
+	Downloads
 2
-d/home/sage
-	Pics
-5
 d/home/sage/Downloads
-	..
-0
-d/home/sage/.dwm
-	..
-0
-d/home/sage
-	Pics
-5
-d/home/sage/Pics
-	da232j1-2666f453-5819-4c89-9e0e-d5fa0d47b2ec.png
+	Downloads
 1
+d/home/sage/Downloads/Downloads
+	..
+0
+d/home/sage/Downloads
+	chromum
+2
+d/home/sage/Downloads/chromum
+	..
+0
+d/home/sage/Downloads
+	Downloads
+1
+d/home/sage/Downloads/Downloads
+	..
+0
+d/home/sage/Downloads
+	chromum
+2
+d/home/sage/Downloads/chromum
+	ethics.pdf
+13
+d/home/sage
+	Downloads
+2
+d/home/sage/Downloads
+	Downloads
+1
+d/home/sage/Downloads/Downloads
+	..
+0
+d/home/sage/Downloads
+	chromum
+2
+d/home/sage/Downloads/chromum
+	ethics.pdf
+13
 
 # Right window history (oldest to newest):
 D/home/sage/Downloads
@@ -116,7 +116,7 @@ D/home/sage/.dwm
 	
 0
 D/home/sage
-	
+	..
 0
 
 # Command line history (oldest to newest):
