@@ -18,11 +18,11 @@ Mod1 + shift + h
 "cd /home/sage && st -e bicon + vifmrun"
 Mod1 + Shift + f
 
-"xbacklight -inc 5" 
-XF86MonBrightnessUp
+ "xbacklight -inc 10 " 
+ XF86MonBrightnessUp
 
-"xbacklight -dec 5"
-XF86MonBrightnessDown
+ "xbacklight -dec 10 "
+ XF86MonBrightnessDown
 
 "pactl set-sink-volume @DEFAULT_SINK@ +1000"
 XF86AudioRaiseVolume
