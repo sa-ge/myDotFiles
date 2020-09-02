@@ -1,5 +1,6 @@
 " set leader key
-let g:mapleader = ","
+nnoremap <SPACE> <Nop>
+let g:mapleader = " "
 let g:debuggerPort = 9000
 "Php auto complete 
 "autocmd BufEnter * call ncm2#enable_for_buffer()
@@ -10,16 +11,10 @@ let g:debuggerPort = 9000
 let g:airline#extensions#tabline#enabled = 1 
 let g:airline#extensions#tabline#formatter = "unique_tail"
 let g:python3_host_prog = "/bin/python3"
-let g:python_host_prog = "/bin/python2"
-let g:python_host_prog = "/bin/python2"
 let g:webdevicons_enable = 1
 let g:webdevicons_enable_nerdtree = 1
-let $LANG='en'
 
-
-
-
-syntax enable                           " Enables syntax highlighing
+"syntax enable                           " Enables syntax highlighing
 set tags=tags
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
@@ -44,7 +39,6 @@ set autoindent                          " Good auto indent set laststatus=0     
 set relativenumber
 set number                              " Line numbers
 set cursorline                          " Enable highlighting of the current line
-set background=dark                     " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set nobackup                            " This is recommended by coc
@@ -56,16 +50,18 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set path+=**                            
 set wildmenu
 
+
+" no swap file && record changes
+ 
+set noswapfile 
+set undodir=~/.config/nvim/undodir
+set undofile
+set incsearch
+
+
 "set autochdir                           " Your working directory will always be the same as your working directory
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-
-" You can't stop me
-cmap w!! w !sudo tee %
-
-
-
-
 
  let g:vdebug_options = {
     \    'port' : 9000,
@@ -90,64 +86,24 @@ cmap w!! w !sudo tee %
     \}
 
 " color scheme
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_invert_selection='0'
 syntax on
 colorscheme gruvbox 
-filetype on
-filetype plugin indent on
+set background=dark
+"highlight Normal ctermfg=gray  ctermbg=black 
 
 
 " lightline
 set noshowmode
-let g:lightline = { 'colorscheme': 'gruvbox' }
 
+" help your rg to know the root directory and use git ignore
 
-" arraw keys mapps to nob
+if executable('Rg')
+    let g:Rg_derive_root='true'
+endif
+let g:ctrlp_user_command = ['.git/','git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
-
-imap <Down>    <Nop>
-imap <Up>      <Nop>
-imap <Right>   <Nop>
-imap <Left>    <Nop>
-
-
-nmap <Down> ddp 
-nmap <Up> ddkP
-
-
-"Move through split window
-  
-nmap <leader>k  :wincmd k<CR>
-nmap <leader>j  :wincmd j<CR>
-nmap <leader>h  :wincmd h<CR>
-nmap <leader>l  :wincmd l<CR>
-
-
-
-"Resizing splits 
-
-nmap <leader>,h  :vertical resize +4<CR> 
-nmap <leader>,l  :vertical resize -4<CR>
-"nmap <leader>o :
-
-
- 
- 
- 
- 
-" Openning 
- 
-nmap <leader>n :NERDTree<CR>
-nmap <leader>e :bprevious<CR>:bd#<CR>
-
-" fzf mapping 
-nmap // :BLines<CR>
-nmap /// :Rg!<CR> 
-nmap ,, :Files<CR>
-
-
-
-" Mlutible Cursor alternative 
-nmap <silent> s* :let @/='\<'.expand('<cword>').'\>'<CR>cgn
 
 "always show status bar
 set laststatus=2
@@ -167,7 +123,6 @@ set tabstop=4
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Uncomment to autostart the NERDTree
 " autocmd vimenter * NERDTree
-map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '►'
 let g:NERDTreeDirArrowCollapsible = '▼'
 let NERDTreeShowLineNumbers=1
@@ -184,6 +139,8 @@ let g:NERDTreeWinSize=38
   highlight StatusLine       ctermfg=7    ctermbg=8       cterm=none
   highlight NERDTreeClosable ctermfg=2
   highlight NERDTreeOpenable ctermfg=8
+" highlight TabLine          ctermfg=244     ctermbg=234     cterm=none
+" highlight TablineSel       ctermfg=0       ctermbg=247     cterm=none
 "  highlight String           ctermfg=9   ctermbg=none    cterm=none
 
   
@@ -192,7 +149,7 @@ let g:NERDTreeWinSize=38
 " highlight FoldColumn       ctermfg=103     ctermbg=234     cterm=none
 " highlight DiffAdd          ctermfg=none    ctermbg=23      cterm=none
 " highlight DiffChange       ctermfg=none    ctermbg=56      cterm=none
-" highlight DiffDelete       ctermfg=168     ctermbg=96      cterm=none
+" hihlight DiffDelete       ctermfg=168     ctermbg=96      cterm=none
 " highlight DiffText         ctermfg=0       ctermbg=80      cterm=none
 " highlight SignColumn       ctermfg=244     ctermbg=235     cterm=none
 " highlight Conceal          ctermfg=251     ctermbg=none    cterm=none
@@ -204,8 +161,6 @@ let g:NERDTreeWinSize=38
 " highlight PmenuSel         ctermfg=0       ctermbg=111     cterm=none
 " highlight PmenuSbar        ctermfg=206     ctermbg=235     cterm=none
 " highlight PmenuThumb       ctermfg=235     ctermbg=206     cterm=none
-" highlight TabLine          ctermfg=244     ctermbg=234     cterm=none
-" highlight TablineSel       ctermfg=0       ctermbg=247     cterm=none
 " highlight TablineFill      ctermfg=244     ctermbg=234     cterm=none
 " highlight CursorColumn     ctermfg=none    ctermbg=236     cterm=none
 " highlight CursorLine       ctermfg=none    ctermbg=236     cterm=none

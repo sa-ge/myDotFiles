@@ -21,7 +21,7 @@ alias nmoff="nmcli radio wifi off"
 alias nmshow="nmcli radio wifi"
 alias nmscan="nmcli radio wifi rescan"
 alias nmconnectS="nmcli device wifi connect sage password Aa@123456"
-#alias nmconnectF="nmcli device wifi connect ""* Fahmi Net (203) 773031001"" password """""
+alias nmconnectF="nmcli device wifi connect ""* Fahmi Net (203) 773031001"" password """""
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 
 alias mnt="/home/sage/myScripts/Mnt.sh"

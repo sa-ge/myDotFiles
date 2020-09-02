@@ -2,7 +2,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
     " vim sensible
     Plug 'tpope/vim-sensible'
-
+    "
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " File Explorer
@@ -10,13 +10,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Color Theme 
-    Plug 'tomasr/molokai'
-    Plug 'joshdick/onedark.vim'
-    Plug 'rafi/awesome-vim-colorschemes'
-    
+    Plug 'colepeters/spacemacs-theme.vim'
+    Plug 'sainnhe/gruvbox-material'
+    Plug 'phanviet/vim-monokai-pro'
+    Plug 'flazz/vim-colorschemes'
+    Plug 'chriskempson/base16-vim'
     " Xdebug
     Plug 'vim-vdebug/vdebug'
-    Plug 'morhetz/gruvbox' 
+    Plug 'gruvbox-community/gruvbox' 
     
 
     "Status Bar Plugins airline and airline themes
@@ -39,14 +40,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     
     "Icon plugin 
-    
     Plug 'ryanoasis/vim-devicons'
 
     "nerdtree git plugin 
     Plug 'Xuyuanp/nerdtree-git-plugin'
 
     "fzf plugin 
-    
      Plug 'junegunn/fzf', {'do': {-> fzf#install()}} 
      Plug 'junegunn/fzf.vim'
 
@@ -60,7 +59,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
      " sippets 
      Plug 'honza/vim-snippets'  
-      
+
+
+    " Undo Tree Show plugin
+    Plug 'mbbill/undotree'
+
 
 
 

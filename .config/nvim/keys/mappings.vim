@@ -2,11 +2,6 @@
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
-" Use alt + hjkl to resize windows
-nnoremap <M-j>    :resize -2<CR>
-nnoremap <M-k>    :resize +2<CR>
-nnoremap <M-h>    :vertical resize -2<CR>
-nnoremap <M-l>    :vertical resize +2<CR>
 
 " Easy CAPS
 inoremap <c-u> <ESC>viwUi
@@ -36,5 +31,81 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <Leader>o o<Esc>^Da
-nnoremap <Leader>O O<Esc>^Da
+
+" arraw keys mapps to nob
+
+
+imap <Down>    <Nop>
+imap <Up>      <Nop>
+imap <Right>   <Nop>
+imap <Left>    <Nop>
+
+
+nmap <Down> ddp 
+nmap <Up> ddkP 
+
+
+
+nmap <S-D> <S-v>yp 
+
+
+
+"Move through split window
+  
+nmap <leader>k  :wincmd k<CR>
+nmap <leader>j  :wincmd j<CR>
+nmap <leader>h  :wincmd h<CR>
+nmap <leader>l  :wincmd l<CR>
+
+
+
+"Resizing splits 
+nmap <silent> <leader>+  :vertical resize +5<CR> 
+nmap <silent> <leader>-  :vertical resize -5<CR>
+"nmap <leader>o :
+
+ 
+nmap <silent> s* :let @/='\<'.expand('<cword>').'\>'<CR>cgn
+ 
+" Openning 
+ 
+nmap <leader>n :NERDTree<CR>
+nmap <leader>nn :NERDTreeClose<CR>
+
+nmap <leader>e :bprevious<CR>:bd#<CR>
+
+" fzf mapping 
+nmap // :BLines<CR>
+nmap /// :Rg!<CR> 
+nmap ,, :Files<CR>
+
+ 
+      
+map <C-n> :NERDTreeToggle<CR>
+
+
+
+
+imap <C-l> <Plug>(coc-snippets-expand)
+vmap <C-j> <Plug>(coc-snippets-select)
+let g:coc_snippet_next= '<c-j>' 
+let g:coc_snippet_prev = '<c-k>' 
+imap <C-j> <Plug>(coc-snippets-expand-jump)
+
+
+
+
+" Undo tree show 
+nnoremap <silent><leader>u :UndotreeShow<CR>
+
+
+
+
+" Go TO code navigation 
+nmap <silent> gd <Plug>(coc-definition) 
+nmap <silent> gy <Plug>(coc-type-definition) 
+nmap <silent> gi <Plug>(coc-implementation) 
+nmap <silent> gr <plug>(coc-references) 
+"nmap <leader>rr <plug>(coc-rename)
+
+
