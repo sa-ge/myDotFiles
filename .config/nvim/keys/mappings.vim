@@ -98,7 +98,8 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 " Undo tree show 
 nnoremap <silent><leader>u :UndotreeShow<CR>
 
-
+inoremap <C-j> <C-o>A
+imap <C-k> <M-n>
 
 
 " Go TO code navigation 
@@ -107,5 +108,4 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation) 
 nmap <silent> gr <plug>(coc-references) 
 "nmap <leader>rr <plug>(coc-rename)
-
 

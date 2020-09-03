@@ -26,9 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/sage
-	Downloads
-2
 d/home/sage/Downloads
 	Downloads
 1
@@ -71,11 +68,11 @@ d/home/sage/Downloads/chromum
 d/home/sage
 	Downloads
 2
+d/opt/lampp/docs/storeTry/public/img
+	usericon.png
+36
 
 # Right window history (oldest to newest):
-D/home/sage/Downloads
-	
-0
 D/home/sage
 	..
 0
@@ -118,6 +115,9 @@ D/home/sage/.dwm
 D/home/sage
 	..
 0
+D/opt/lampp/docs/storeTry/public/img
+	
+0
 
 # Command line history (oldest to newest):
 :find \*.mp3
@@ -125,6 +125,7 @@ D/home/sage
 :help
 :execute
 :rename photo-1485470733090-0aae1788d5af Minimal-Wallpaper-For-IPhone.png
+:w
 :q
 
 # Search history (oldest to newest):
