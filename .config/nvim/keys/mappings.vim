@@ -100,7 +100,8 @@ nnoremap <silent><leader>u :UndotreeShow<CR>
 
 inoremap <C-j> <C-o>A
 imap <C-k> <M-n>
-
+imap <M> <C>
+imap <ESC> <ESC>l
 
 " Go TO code navigation 
 nmap <silent> gd <Plug>(coc-definition) 
@@ -108,4 +109,3 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation) 
 nmap <silent> gr <plug>(coc-references) 
 "nmap <leader>rr <plug>(coc-rename)
-

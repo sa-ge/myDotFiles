@@ -26,15 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/sage/Downloads
-	Downloads
-1
-d/home/sage/Downloads/Downloads
-	..
-0
-d/home/sage/Downloads
-	chromum
-2
 d/home/sage/Downloads/chromum
 	..
 0
@@ -71,11 +62,17 @@ d/home/sage
 d/opt/lampp/docs/storeTry/public/img
 	usericon.png
 36
+d/home/sage
+	Downloads
+2
+d/home/sage/Downloads
+	qute
+8
+d/home/sage/Downloads/qute
+	user.png
+1
 
 # Right window history (oldest to newest):
-D/home/sage
-	..
-0
 D/home/sage/.dwm
 	
 0
@@ -116,6 +113,9 @@ D/home/sage
 	..
 0
 D/opt/lampp/docs/storeTry/public/img
+	
+0
+D/home/sage
 	
 0
 

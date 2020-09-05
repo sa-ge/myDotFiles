@@ -64,9 +64,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Undo Tree Show plugin
     Plug 'mbbill/undotree'
 
+    " genarate tags 
+   
+    Plug 'ludovicchabant/vim-gutentags'
 
-
-
-     
-     call plug#end()
+    call plug#end()
 
