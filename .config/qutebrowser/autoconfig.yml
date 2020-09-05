@@ -33,4 +33,4 @@ settings:
   statusbar.show:
     global: never
   tabs.show:
-    global: always
+    global: switching

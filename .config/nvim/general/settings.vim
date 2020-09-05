@@ -49,7 +49,6 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set path+=**                            
 set wildmenu
-set wildmode=full
 
 
 " no swap file && record changes
@@ -170,18 +169,8 @@ let g:NERDTreeWinSize=38
 " highlight htmlEndTag       ctermfg=74     ctermbg=none    cterm=none
 " highlight xmlEndTag        ctermfg=114     ctermbg=none    cterm=none
 
-" you complete me 
 
-let s:lsp = '$HOME/.config/nvim/autoload/plugged/YouCompleteMe/lsp-example/lsp-examples'
-let g:ycm_language_server = [
-            \   {
-            \     'name': 'php',
-            \     'cmdline': [ 'php', expand( s:lsp . '/php/vendor/bin/php-language-server.php' ) ],
-            \     'filetypes': [ 'php' ],
-            \   },
-            \ ]
 
-let g:ycm_auto_trigger = 1
 
 
 
