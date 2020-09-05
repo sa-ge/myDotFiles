@@ -9,8 +9,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="vim ~/.zshrc"
 alias lmp="sudo /opt/lampp/manager-linux-x64.run"
-alias vim="nvim"
-alias vi="nvim"
+alias vi="vim"
 alias ls="lsd"
 alias docs="cd /opt/lampp/docs"
 
