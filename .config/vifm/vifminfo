@@ -26,12 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/sage/Downloads/chromum
-	..
-0
-d/home/sage/Downloads
-	Downloads
-1
 d/home/sage/Downloads/Downloads
 	..
 0
@@ -71,11 +65,14 @@ d/home/sage/Downloads
 d/home/sage/Downloads/qute
 	user.png
 1
+d/home/sage/Mnt/m1/انترنت شارع تعز
+	النخوة العربية
+1
+d/home/sage/Mnt/m1/انترنت شارع تعز/النخوة العربية
+	1.wmv
+1
 
 # Right window history (oldest to newest):
-D/home/sage/.dwm
-	
-0
 D/home/sage
 	
 0
@@ -116,6 +113,9 @@ D/opt/lampp/docs/storeTry/public/img
 	
 0
 D/home/sage
+	
+0
+D/home/sage/Mnt/m1/انترنت شارع تعز
 	
 0
 
