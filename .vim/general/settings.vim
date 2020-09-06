@@ -46,17 +46,20 @@ set nowritebackup                       " This is recommended by coc
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
-set clipboard=unnamedplus               " Copy paste between vim and everything else
+set clipboard=unnamed                   " Copy paste between vim and everything else
 set path+=**                            
 set wildmenu
 
+let &t_SI = "\<esc>[5 q" 
+let &t_EI = "\<esc>[2 q" 
+let &t_SR = "\<esc>[3 q" 
 
 " no swap file && record changes
  
 set noswapfile 
 set undodir=~/.vim/undodir
 set undofile
-set incsearch
+set incsearch    
 
 
 "set autochdir                           " Your working directory will always be the same as your working directory

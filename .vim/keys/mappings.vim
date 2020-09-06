@@ -109,3 +109,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation) 
 nmap <silent> gr <plug>(coc-references) 
 "nmap <leader>rr <plug>(coc-rename)
+
+
+vmap <leader>y :!xclip -f -sel clip<CR>
+map  <leader>p mz:-1r !xclip -o -sel clip<CR>
+
