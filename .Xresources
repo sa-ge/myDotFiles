@@ -52,7 +52,7 @@ URxvt*scrollBar_right:   false
 URxvt*depth: 32
 URxvt.background: [91]#131313
 
-*.font: DejaVu Sans Mono for Powerline:size=8.5
+*.font: DejaVu Sans Mono for Powerline:size=8.0
 URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=10
 URxvt.letterSpace: 0
 *antialias:  true
