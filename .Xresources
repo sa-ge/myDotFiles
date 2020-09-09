@@ -1,7 +1,7 @@
 ##### THIS FILE IS BEING CURRENTLY MANAGED BY URXVTCONFIG #####
 ##### CHANGES DONE TO THIS FILE MANUALLY MAY AFFECT THE FUNCTIONALITY ######
 ##### PROCEED WITH CAUTION! #####
-
+*.xterm-256color:
 ! special colors
 *.foreground:  #d6dbe5
 *.background:  #131313
@@ -33,8 +33,8 @@
 URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
 
-URxvt*transparent:       false
-
+*.transparent:     true 
+*.alpha: 0.8
 URxvt*depth: 32
 URxvt.background: [91]#131313
 
@@ -48,6 +48,7 @@ URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
 
 *.letterSpace: 4
+
 
 URxvt*depth: 32
 URxvt.background: [91]#131313

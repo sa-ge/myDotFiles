@@ -13,6 +13,8 @@ settings:
         st: config-cycle tabs.show always switching
         xb: config-cycle statusbar.hide
         xx: config-cycle statusbar.hide ;; config-cycle tabs.show always switching
+  colors.webpage.bg:
+    global: black
   content.autoplay:
     global: false
   content.notifications:
@@ -33,4 +35,4 @@ settings:
   statusbar.show:
     global: never
   tabs.show:
-    global: switching
+    global: always
