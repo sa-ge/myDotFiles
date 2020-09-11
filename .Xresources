@@ -33,7 +33,7 @@
 URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
 
-*.transparent:     true 
+*.transparent:     true
 *.alpha: 0.8
 URxvt*depth: 32
 URxvt.background: [91]#131313
@@ -53,8 +53,9 @@ URxvt*scrollBar_right:   false
 URxvt*depth: 32
 URxvt.background: [91]#131313
 
-*.font: DejaVu Sans Mono for Powerline:size=8.0
+*.font:Fira Code Medium:size=8.0
 URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=10
+
 URxvt.letterSpace: 0
 *antialias:  true
 *autohint:   true

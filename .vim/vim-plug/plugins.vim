@@ -11,6 +11,9 @@ call plug#begin('~/.vim/autoload/plugged')
     " Color Theme
     Plug 'sainnhe/gruvbox-material'
     Plug 'gruvbox-community/gruvbox'
+    Plug 'roosta/srcery'
+    "Plug 'joshdick/onedark.vim'
+
     " Xdebug
     Plug 'vim-vdebug/vdebug'
 
@@ -20,14 +23,21 @@ call plug#begin('~/.vim/autoload/plugged')
     "Plug 'powerline/powerline'
     Plug 'vim-airline/vim-airline'
     Plug  'vim-airline/vim-airline-themes'
-
+    
+    " php syntax highliting 
+    Plug 'StanAngeloff/php.vim' 
 
 
     "php autocomplete
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    
+    "Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'lvht/phpcd.vim', {'for': 'php', 'do': 'composer install'}
+    Plug 'kristijanhusak/deoplete-phpactor'
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
 
    " plug 'ncm2/ncm2'
-   " plug 'roxma/nvim-yarp'
    " plug 'ncm2/ncm2-bufword'
    " plug 'ncm2/ncm2-path'
 
@@ -55,14 +65,18 @@ call plug#begin('~/.vim/autoload/plugged')
 
      " sippets
      Plug 'honza/vim-snippets'
+     Plug 'SirVer/ultisnips'
 
 
     " Undo Tree Show plugin
-    Plug 'mbbill/undotree'
+"    Plug 'mbbill/undotree'
 
     " genarate tags
 
     "Plug 'ludovicchabant/vim-gutentags'
+
+    " remember keybins
+"    Plug 'liuchengxu/vim-which-key'
 
     call plug#end()
 
