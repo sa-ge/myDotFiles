@@ -102,8 +102,8 @@ set background=dark
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 " auto complete with deoplete
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#option('ignore_sources', {'php': ['omni']})
+"let g:deoplete#enable_at_startup = 1
+"call deoplete#custom#option('ignore_sources', {'php': ['omni']})
 
 " lightline
 set noshowmode

@@ -26,62 +26,53 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/sage/Mnt/m1/نسخة j3 pro/نسخة قديم كامل - سبحان الله/ملفاتي ذكريات مهم مهم/مجلد جديد
-	..
-0
-d/home/sage/Mnt/m1/نسخة j3 pro/نسخة قديم كامل - سبحان الله/ملفاتي ذكريات مهم مهم
-	مجلد جديد
-3
-d/home/sage/Mnt/m1/نسخة j3 pro/نسخة قديم كامل - سبحان الله/ملفاتي ذكريات مهم مهم/مجلد جديد
-	lab3
+d/usr/share/icons
+	Adwaita
 1
-d/home/sage/Mnt/m1/نسخة j3 pro/نسخة قديم كامل - سبحان الله/ملفاتي ذكريات مهم مهم/مجلد جديد/lab3
-	..
-0
-d/home/sage/Mnt/m1/نسخة j3 pro/نسخة قديم كامل - سبحان الله/ملفاتي ذكريات مهم مهم/مجلد جديد
-	..
-0
-d/home/sage/Mnt/m1/نسخة j3 pro/نسخة قديم كامل - سبحان الله/ملفاتي ذكريات مهم مهم
-	..
-0
-d/home/sage/Mnt/m1/نسخة j3 pro/نسخة قديم كامل - سبحان الله
-	..
-0
-d/home/sage/Mnt/m1/نسخة j3 pro
-	..
-0
-d/home/sage/Mnt/m1
-	..
-0
-d/home/sage/Mnt
-	m2
-2
-d/home/sage/Mnt/m2
-	thoriaSky
+d/usr/share/icons/Adwaita
+	cursors
 11
-d/home/sage/Mnt/m2/thoriaSky
+d/usr/share/icons/Adwaita/cursors
 	..
 0
-d/home/sage/Mnt/m2
-	mohammed alawash
-4
-d/home/sage/Mnt/m2/mohammed alawash
+d/usr/share/icons/Adwaita
+	scalable
+12
+d/usr/share/icons/Adwaita/scalable
+	mimetypes
+8
+d/usr/share/icons/Adwaita/scalable/mimetypes
 	..
 0
-d/home/sage/Mnt/m2
-	L10.AR
-4
+d/usr/share/icons/Adwaita/scalable
+	places
+9
+d/usr/share/icons/Adwaita/scalable/places
+	..
+0
+d/usr/share/icons/Adwaita/scalable
+	..
+0
+d/usr/share/icons/Adwaita
+	..
+0
+d/usr/share/icons
+	..
+0
+d/usr/share
+	icons
+45
+d/home/sage
+	public
+9
+d/home/sage/public
+	000.jpg
+11
+d/home/sage
+	public
+9
 
 # Right window history (oldest to newest):
-D/home/sage/.dwm
-	
-0
-D/home/sage
-	..
-0
-D/home/sage/.dwm
-	
-0
 D/home/sage
 	
 0
@@ -116,6 +107,15 @@ D/home/sage/.config/nvim/autoload/plugged/vim-monokai-pro/screenshots
 	
 0
 D/home/sage
+	..
+0
+D/usr/share/icons/hicolor/scalable/mimetypes
+	
+0
+D/
+	bin
+0
+D/home/sage
 	
 0
 
@@ -129,6 +129,8 @@ D/home/sage
 :q
 
 # Search history (oldest to newest):
+/us
+/icon
 
 # Prompt history (oldest to newest):
 pccockjk

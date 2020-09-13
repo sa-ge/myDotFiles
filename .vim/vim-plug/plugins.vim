@@ -22,20 +22,20 @@ call plug#begin('~/.vim/autoload/plugged')
 
     "Plug 'powerline/powerline'
     Plug 'vim-airline/vim-airline'
-    Plug  'vim-airline/vim-airline-themes'
+    Plug 'vim-airline/vim-airline-themes'
     
     " php syntax highliting 
-    Plug 'StanAngeloff/php.vim' 
+    "Plug 'StanAngeloff/php.vim' 
 
 
     "php autocomplete
     
-    "Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'lvht/phpcd.vim', {'for': 'php', 'do': 'composer install'}
-    Plug 'kristijanhusak/deoplete-phpactor'
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    "Plug 'kristijanhusak/deoplete-phpactor'
+    "Plug 'padawan-php/deoplete-padawan', {'do': 'composer install'}
+    "Plug 'Shougo/deoplete.nvim'
+    "Plug 'roxma/nvim-yarp'
+    "Plug 'roxma/vim-hug-neovim-rpc'
 
    " plug 'ncm2/ncm2'
    " plug 'ncm2/ncm2-bufword'
@@ -67,6 +67,8 @@ call plug#begin('~/.vim/autoload/plugged')
      Plug 'honza/vim-snippets'
      Plug 'SirVer/ultisnips'
 
+     " git integration
+     Plug 'mhinz/vim-signify'
 
     " Undo Tree Show plugin
 "    Plug 'mbbill/undotree'
