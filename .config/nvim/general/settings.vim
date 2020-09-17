@@ -1,15 +1,15 @@
 " set leader key
 nnoremap <SPACE> <Nop>
 let g:mapleader = " "
-let g:debuggerPort = 9000
-"Php auto complete 
+let g:debuggerPort = 9001
+"Php auto complete
 "autocmd BufEnter * call ncm2#enable_for_buffer()
 "set completeopt=noinsert,menuone,noselect
 
-" loading the status bar plugin and the webdevicons 
-"let g:deoplete#enable_at_startup = 1
-let g:airline#extensions#tabline#enabled = 1 
+" loading the status bar plugin and the webdevicons
+let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = "unique_tail"
+let g:airline_powerline_fonts = 1
 let g:python3_host_prog = "/bin/python3"
 let g:webdevicons_enable = 1
 let g:webdevicons_enable_nerdtree = 1
@@ -46,15 +46,19 @@ set nowritebackup                       " This is recommended by coc
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
-set clipboard=unnamedplus               " Copy paste between vim and everything else
-set path+=**                            
+set clipboard=unnamed                   " Copy paste between vim and everything else
+set path+=**
 set wildmenu
 
+" change cursor shape when entering insert mode
+let &t_SI = "\<esc>[5 q"
+let &t_EI = "\<esc>[2 q"
+let &t_SR = "\<esc>[3 q"
 
 " no swap file && record changes
- 
-set noswapfile 
-set undodir=~/.config/nvim/undodir
+
+set noswapfile
+set undodir=~/.vim/undodir
 set undofile
 set incsearch
 
@@ -64,7 +68,7 @@ set incsearch
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
  let g:vdebug_options = {
-    \    'port' : 9000,
+    \    'port' : 9001,
     \    'timeout' : 20,
     \    'server' : '',
     \    'on_close' : 'stop',
@@ -87,13 +91,21 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 
 " color scheme
 let g:gruvbox_contrast_dark = 'hard'
-let g:gruvbox_invert_selection='0'
 syntax on
-colorscheme gruvbox 
+filetype plugin indent on
 set background=dark
-"highlight Normal ctermfg=gray  ctermbg=black 
+"highlight Normal ctermfg=gray  ctermbg=black
 
 
+
+" auto complete
+"autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+" auto complete with deoplete
+let g:deoplete#enable_at_startup = 1
+"call deoplete#custom#option('ignore_sources', {'php': ['omni']})
+"autocmd BufEnter * call ncm2#enable_for_buffer()
+"set completeopt=noinsert,menuone,noselect
 " lightline
 set noshowmode
 
@@ -106,9 +118,8 @@ let g:ctrlp_user_command = ['.git/','git --git-dir=%s/.git ls-files -oc --exclud
 
 
 "always show status bar
-set laststatus=2
 
-"Use spaces instead of tabs 
+"Use spaces instead of tabs
 set expandtab
 "Be smart when using tabs
 set smarttab
@@ -143,7 +154,7 @@ let g:NERDTreeWinSize=38
 " highlight TablineSel       ctermfg=0       ctermbg=247     cterm=none
 "  highlight String           ctermfg=9   ctermbg=none    cterm=none
 
-  
+
 " highlight WildMenu         ctermfg=0       ctermbg=80      cterm=none
 " highlight Folded           ctermfg=103     ctermbg=234     cterm=none
 " highlight FoldColumn       ctermfg=103     ctermbg=234     cterm=none
@@ -171,7 +182,6 @@ let g:NERDTreeWinSize=38
 
 
 
-
-
+"set shortmess+=c
 
 
