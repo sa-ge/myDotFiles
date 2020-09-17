@@ -1,4 +1,5 @@
 call plug#begin('~/.vim/autoload/plugged')
+   
 
     " vim sensible
     Plug 'tpope/vim-sensible'
@@ -30,19 +31,32 @@ call plug#begin('~/.vim/autoload/plugged')
 
     "php autocomplete
     
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    "Plug 'kristijanhusak/deoplete-phpactor'
+   " Plug 'neoclide/coc.nvim', {'branch': 'release'}
     "Plug 'padawan-php/deoplete-padawan', {'do': 'composer install'}
-    "Plug 'Shougo/deoplete.nvim'
-    "Plug 'roxma/nvim-yarp'
-    "Plug 'roxma/vim-hug-neovim-rpc'
-
-   " plug 'ncm2/ncm2'
+    Plug 'Shougo/deoplete.nvim'
+"   Plug 'roxma/LanguageServer-php-neovim', {'do': 'composer install --no-dev -o && composer run-script parse-stubs'}
+ "   Plug 'roxma/nvim-completion-manager'
+   " Plug 'roxma/ncm2-phpactor'
    " plug 'ncm2/ncm2-bufword'
    " plug 'ncm2/ncm2-path'
+   
+    "Plug 'ncm2/ncm2'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+    Plug 'kristijanhusak/deoplete-phpactor'
+    Plug 'phpactor/phpactor', {'do': 'composer install', 'for': 'php'}
 
-   " plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
-   " plug 'phpactor/ncm2-phpactor'
+    " python
+    "Plug 'deoplete-plugins/deoplete-jedi'
+    "javascript
+   
+    "Plug 'wokalski/autocomplete-flow'
+    " Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
+
+    "Plug 'carlitux/deoplete-ternjs', {'do': 'npm install -g tern'} 
+
+    "Plug 'phpactor/ncm2-phpactor', {'for': 'php'}
+
 
 
     "Icon plugin
@@ -68,7 +82,7 @@ call plug#begin('~/.vim/autoload/plugged')
      Plug 'SirVer/ultisnips'
 
      " git integration
-     Plug 'mhinz/vim-signify'
+     "Plug 'mhinz/vim-signify'
 
     " Undo Tree Show plugin
 "    Plug 'mbbill/undotree'
@@ -80,5 +94,5 @@ call plug#begin('~/.vim/autoload/plugged')
     " remember keybins
 "    Plug 'liuchengxu/vim-which-key'
 
-    call plug#end()
 
+    call plug#end()

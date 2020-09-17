@@ -93,18 +93,21 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 let g:gruvbox_contrast_dark = 'hard'
 syntax on
 filetype plugin indent on
+set omnifunc=syntaxcomplete#Complete
 set background=dark
 "highlight Normal ctermfg=gray  ctermbg=black
 
 
 
 " auto complete
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+"autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 " auto complete with deoplete
-"let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1
+"let g:autocomplete_flow#insert_paren_after_function = 0
 "call deoplete#custom#option('ignore_sources', {'php': ['omni']})
-
+"autocmd BufEnter * call ncm2#enable_for_buffer()
+"set completeopt=noinsert,menuone,noselect
 " lightline
 set noshowmode
 
@@ -180,5 +183,7 @@ let g:NERDTreeWinSize=38
 " highlight xmlEndTag        ctermfg=114     ctermbg=none    cterm=none
 
 
+
+"set shortmess+=c
 
 

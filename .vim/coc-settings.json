@@ -1,0 +1,4 @@
+{
+    "phpactor.enable": true,
+    "phpactor.path": "/home/sage/.vim/autoload/plugged/phpactor/bin/phpactor"
+}

@@ -224,7 +224,7 @@ snippet getopt
 		opts, args = getopt.getopt(sys.argv[1:], "${1:short_options}", [${2:long_options}])
 
 	except getopt.GetoptError, err:
-		# Print debug info
+		#var Print debug info
 		print str(err)
 		${3:error_action}
 

@@ -104,11 +104,11 @@ imap <M> <C>
 imap <ESC> <ESC>l
 
 " Go TO code navigation
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <plug>(coc-references)
-"nmap <leader>rr <plug>(coc-rename)
+   nmap <silent> gd <Plug>(coc-definition)
+   nmap <silent> gy <Plug>(coc-type-definition)
+   nmap <silent> gi <Plug>(coc-implementation)
+   nmap <silent> gr <plug>(coc-references)
+nmap <leader>rr <plug>(coc-rename)
 
 
 vmap <leader>y :!xclip -f -sel clip<CR>
@@ -124,4 +124,54 @@ let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+
+"augroup ncm2
+"  au!
+"  autocmd BufEnter * call ncm2#enable_for_buffer()
+"  au User Ncm2PopupOpen set completeopt=noinsert,menuone,noselect
+"  au User Ncm2PopupClose set completeopt=menuone
+"augroup END
+
+" parameter expansion for selected entry via Enter
+"inoremap <silent> <expr> <CR> (pumvisible() ? ncm2_ultisnips#expand_or("\<CR>", 'n') : "\<CR>")
+
+" cycle through completion entries with tab/shift+tab
+"inoremap <expr> <TAB> pumvisible() ? "\<c-n>" : "\<TAB>"
+"inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<TAB>"
+
+
+" phpactor 
+" Select range based on AST
+"   nmap <silent><Leader>r <Plug>(coc-range-select)
+"   xmap <silent><Leader>r <Plug>(coc-range-select)
+
+"   " Navigations
+"   nmap <Leader>o <Plug>(coc-definition)
+"   nmap <Leader>O <Plug>(coc-type-definition)
+"   nmap <Leader>I <Plug>(coc-implementation)
+"   nmap <Leader>R <Plug>(coc-references)
+
+"   " Hover
+"   nmap K :call <SID>show_documentation()<CR>
+"   inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+"   function! s:show_documentation()
+"     if (index(['vim','help'], &filetype) >= 0)
+"       execute 'h '.expand('<cword>')
+"     else
+"       call CocAction('doHover')
+"     endif
+"   endfunction
+
+"   " Text objects for functions and classes (uses document symbol provider)
+"   xmap if <Plug>(coc-funcobj-i)
+"   omap if <Plug>(coc-funcobj-i)
+"   xmap af <Plug>(coc-funcobj-a)
+"   omap af <Plug>(coc-funcobj-a)
+"   xmap ic <Plug>(coc-classobj-i)
+"   omap ic <Plug>(coc-classobj-i)
+"   xmap ac <Plug>(coc-classobj-a)
+"   omap ac <Plug>(coc-classobj-a)
+"   autocmd CursorHold * silent call CocActionAsync('highlight')
+
 
