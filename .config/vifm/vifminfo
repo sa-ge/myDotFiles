@@ -26,51 +26,51 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/usr/share/icons
-	Adwaita
+d/home/sage/Downloads/myScripts
+	..
+0
+d/home/sage/Downloads
+	music
+4
+d/home/sage/Downloads/music
+	khaleji_msra3
 1
-d/usr/share/icons/Adwaita
-	cursors
-11
-d/usr/share/icons/Adwaita/cursors
+d/home/sage/Downloads/music/khaleji_msra3
 	..
 0
-d/usr/share/icons/Adwaita
-	scalable
-12
-d/usr/share/icons/Adwaita/scalable
-	mimetypes
-8
-d/usr/share/icons/Adwaita/scalable/mimetypes
+d/home/sage/Downloads/music
 	..
 0
-d/usr/share/icons/Adwaita/scalable
-	places
-9
-d/usr/share/icons/Adwaita/scalable/places
+d/home/sage/Downloads
+	dwm
+3
+d/home/sage/Downloads/dwm
 	..
 0
-d/usr/share/icons/Adwaita/scalable
+d/home/sage/Downloads
+	chromum
+2
+d/home/sage/Downloads/chromum
 	..
 0
-d/usr/share/icons/Adwaita
+d/home/sage/Downloads
+	Downloads
+1
+d/home/sage/Downloads/Downloads
 	..
 0
-d/usr/share/icons
+d/home/sage/Downloads
 	..
 0
-d/usr/share
-	icons
-45
 d/home/sage
-	public
-9
-d/home/sage/public
-	000.jpg
-11
-d/home/sage
-	public
-9
+	Pics
+5
+d/home/sage/Pics
+	spc
+1
+d/home/sage/Pics/spc
+	qJpvKzNOM0Xebxkz.jpg
+23
 
 # Right window history (oldest to newest):
 D/home/sage
