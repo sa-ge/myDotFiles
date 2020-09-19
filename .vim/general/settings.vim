@@ -103,7 +103,7 @@ set background=dark
 "autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 " auto complete with deoplete
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 "let g:autocomplete_flow#insert_paren_after_function = 0
 "call deoplete#custom#option('ignore_sources', {'php': ['omni']})
 "autocmd BufEnter * call ncm2#enable_for_buffer()

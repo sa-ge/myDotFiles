@@ -86,11 +86,11 @@ map <C-n> :NERDTreeToggle<CR>
 
 
 
-"imap <C-l> <Plug>(coc-snippets-expand)
-"vmap <C-j> <Plug>(coc-snippets-select)
-"let g:coc_snippet_next= '<c-j>'
-"let g:coc_snippet_prev = '<c-k>'
-"imap <C-j> <Plug>(coc-snippets-expand-jump)
+imap <C-l> <Plug>(coc-snippets-expand)
+vmap <C-j> <Plug>(coc-snippets-select)
+let g:coc_snippet_next= '<c-j>'
+let g:coc_snippet_prev = '<c-k>'
+imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 
 
@@ -118,12 +118,11 @@ map  <leader>p mz:-1r !xclip -o -sel clip<CR>
 
 
 " Trigger configuration. You need to change this to something else than <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<C-l>"
-let g:UltiSnipsJumpForwardTrigger="<C-j>"
-let g:UltiSnipsJumpBackwardTrigger="<C-k>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
+"       let g:UltiSnipsExpandTrigger="<C-l>"
+"       let g:UltiSnipsJumpForwardTrigger="<C-j>"
+"       let g:UltiSnipsJumpBackwardTrigger="<C-k>"
+"       " If you want :UltiSnipsEdit to split your window.
+"       let g:UltiSnipsEditSplit="vertical"
 
 
 "augroup ncm2
@@ -173,5 +172,7 @@ let g:UltiSnipsEditSplit="vertical"
 "   xmap ac <Plug>(coc-classobj-a)
 "   omap ac <Plug>(coc-classobj-a)
 "   autocmd CursorHold * silent call CocActionAsync('highlight')
+
+let g:coc_snippet_next = '<tab>'
 
 

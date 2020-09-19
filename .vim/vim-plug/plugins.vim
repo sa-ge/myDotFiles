@@ -15,6 +15,8 @@ call plug#begin('~/.vim/autoload/plugged')
     Plug 'roosta/srcery'
     "Plug 'joshdick/onedark.vim'
 
+    "color preview
+    Plug 'ap/vim-css-color'
     " Xdebug
     Plug 'vim-vdebug/vdebug'
 
@@ -31,9 +33,9 @@ call plug#begin('~/.vim/autoload/plugged')
 
     "php autocomplete
     
-   " Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     "Plug 'padawan-php/deoplete-padawan', {'do': 'composer install'}
-    Plug 'Shougo/deoplete.nvim'
+   " Plug 'Shougo/deoplete.nvim'
 "   Plug 'roxma/LanguageServer-php-neovim', {'do': 'composer install --no-dev -o && composer run-script parse-stubs'}
  "   Plug 'roxma/nvim-completion-manager'
    " Plug 'roxma/ncm2-phpactor'
@@ -41,9 +43,9 @@ call plug#begin('~/.vim/autoload/plugged')
    " plug 'ncm2/ncm2-path'
    
     "Plug 'ncm2/ncm2'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
-    Plug 'kristijanhusak/deoplete-phpactor'
+   " Plug 'roxma/nvim-yarp'
+    "Plug 'roxma/vim-hug-neovim-rpc'
+    "Plug 'kristijanhusak/deoplete-phpactor'
     Plug 'phpactor/phpactor', {'do': 'composer install', 'for': 'php'}
 
     " python
@@ -79,7 +81,7 @@ call plug#begin('~/.vim/autoload/plugged')
 
      " sippets
      Plug 'honza/vim-snippets'
-     Plug 'SirVer/ultisnips'
+    " Plug 'SirVer/ultisnips'
 
      " git integration
      "Plug 'mhinz/vim-signify'
