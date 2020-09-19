@@ -6,33 +6,5 @@
 
 config_version: 2
 settings:
-  bindings.commands:
-    global:
-      normal:
-        'db:': config-cycle statusbar.hide
-        st: config-cycle tabs.show always switching
-        xb: config-cycle statusbar.hide
-        xx: config-cycle statusbar.hide ;; config-cycle tabs.show always switching
-  colors.webpage.bg:
-    global: black
-  content.autoplay:
-    global: false
-  content.notifications:
-    https://2.mol16.biz: false
-    https://3.mol16.biz: false
-    https://4.mol16.biz: false
-    https://6.mol16.biz: false
-    https://7.mol16.biz: false
-    https://9.mol16.biz: false
-  downloads.location.directory:
-    global: /home/sage/Downloads/qute
-  fonts.completion.entry:
-    global: Hack
-  fonts.tabs.selected:
-    global: Hack
-  fonts.web.family.cursive:
-    global: Hack
   statusbar.show:
     global: never
-  tabs.show:
-    global: always
