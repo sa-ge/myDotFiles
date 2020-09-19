@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sage/.oh-my-zsh"
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="gnzhme"
 
 plugins=(git zsh-autosuggestions)
 
