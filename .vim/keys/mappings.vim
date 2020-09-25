@@ -173,6 +173,6 @@ map  <leader>p mz:-1r !xclip -o -sel clip<CR>
 "   omap ac <Plug>(coc-classobj-a)
 "   autocmd CursorHold * silent call CocActionAsync('highlight')
 
-let g:coc_snippet_next = '<tab>'
+"let g:coc_snippet_next = '<tab>'
 
 

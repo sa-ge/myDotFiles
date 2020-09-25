@@ -12,3 +12,6 @@ if [ -d /home/sage/.local/bin ] ; then
 fi
 exec xdotool key Alt+b&
 exec compton&
+
+sleep 1s && $HOME/.screenlayout/.MultiMonitor.sh 
+sleep 1s && exec nitrogen --restore
