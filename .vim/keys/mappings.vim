@@ -12,7 +12,9 @@ nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
 
+
 " Alternate way to save
+nnoremap <leader>w :w<CR>
 "nnoremap <C-s> :w<CR>
 " Alternate way to quit
 "nnoremap <C-Q> :wq!<CR>
@@ -24,7 +26,6 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 " Better tabbing
 vnoremap < <gv
 vnoremap > >gv
-
 " Better window navigation
 "nnoremap <C-h> <C-w>h
 "nnoremap <C-j> <C-w>j
@@ -60,17 +61,16 @@ nmap <leader>l  :wincmd l<CR>
 
 
 "Resizing splits
-nmap <silent> <leader>+  :vertical resize +5<CR>
-nmap <silent> <leader>-  :vertical resize -5<CR>
+nmap <silent><leader>+  :vertical resize +5<CR>
+nmap <silent><leader>-  :vertical resize -5<CR>
 "nmap <leader>o :
 
 
-nmap <silent> s* :let @/='\<'.expand('<cword>').'\>'<CR>cgn
+"nmap <silent> s* :let @/='\<'.expand('<cword>').'\>'<CR>cgn
 
 " Openning
 
-nmap <leader>n :NERDTree<CR>
-nmap <leader>nn :NERDTreeClose<CR>
+nmap <leader>n :NERDTreeToggle<CR>
 
 nmap <leader>e :bprevious<CR>:bd#<CR>
 
@@ -87,10 +87,8 @@ map <C-n> :NERDTreeToggle<CR>
 
 
 imap <C-l> <Plug>(coc-snippets-expand)
-vmap <C-j> <Plug>(coc-snippets-select)
 let g:coc_snippet_next= '<c-j>'
 let g:coc_snippet_prev = '<c-k>'
-imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 
 
@@ -98,17 +96,17 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 " Undo tree show
 nnoremap <silent><leader>u :UndotreeShow<CR>
 
-inoremap <C-j> <C-o>A
-imap <C-k> <M-n>
+inoremap <silent><C-j> <C-o>A
+imap <silent><C-k> <M-n>
 imap <M> <C>
-imap <ESC> <ESC>l
+
 
 " Go TO code navigation
    nmap <silent> gd <Plug>(coc-definition)
    nmap <silent> gy <Plug>(coc-type-definition)
    nmap <silent> gi <Plug>(coc-implementation)
    nmap <silent> gr <plug>(coc-references)
-nmap <leader>rr <plug>(coc-rename)
+   nmap <leader>rr <plug>(coc-rename)
 
 
 vmap <leader>y :!xclip -f -sel clip<CR>

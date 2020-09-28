@@ -1,7 +1,7 @@
 " set leader key
 nnoremap <SPACE> <Nop>
 let g:mapleader = " "
-let g:debuggerPort = 9001
+
 "Php auto complete
 "autocmd BufEnter * call ncm2#enable_for_buffer()
 "set completeopt=noinsert,menuone,noselect
@@ -99,6 +99,9 @@ set background=dark
 
 
 
+
+
+
 " auto complete
 "autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
@@ -186,4 +189,11 @@ let g:NERDTreeWinSize=38
 
 "set shortmess+=c
 
+
+" live server
+
+"   let g:bracey_auto_start_browser = 1
+"   let g:bracey_eval_on_save = 1
+"   let g:bracey_refresh_on_save = 1
+"   let g:bracey_server_port = 9002
 
