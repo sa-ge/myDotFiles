@@ -1,7 +1,5 @@
 
 
-"xdotool key MOD2+F5"
-Mod2 + XF86AudioPlay
 
 #"xdotool key MOD2+F7"
 #  Mod2 + F7
@@ -13,10 +11,10 @@ Mod2 + XF86AudioPlay
 #Mod1 + shift +   
 
 "st -e htop"
-Mod1 + shift + h
+Mod4 + shift + h
 
 "cd /home/sage && st -e bicon + vifmrun"
-Mod1 + Shift + f
+Mod4 + Shift + f
 
  "xbacklight -inc 10 " 
  XF86MonBrightnessUp
