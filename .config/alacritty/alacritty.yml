@@ -103,24 +103,20 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-      family: DejaVu Sans Mono for Powerline
-      
+      family: Fira Code
   # Bold font face
   bold:
-     family: DejaVu Sans Mono for Powerline
+     family: Fira Code SemiBold
      style: Bold
   italic:
-        family:  DejaVu Sans Mono for Powerline
-
-
-
+        family: Fira Code Light
 
   bold_italic:
-        family:  DejaVu Sans Mono for Powerline
+        family: Fira Code Retina
 
 
   # Point size
-  ize: 9.0
+  size: 9.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -158,8 +154,8 @@ font:
 colors:
   # Default colors
   primary:
-    background: '0x000000'
-    foreground: '0xbbc5ff'
+    background: '0x131313' 
+    foreground: '0xd6dbe5'
 
     # Bright and dim foreground colors
     #
@@ -188,7 +184,7 @@ colors:
 
   # Normal colors
   normal:
-    black:   '0x292d3e'
+    black:   '0xf81118'
     red:     '0xf07178'
     green:   '0xc3e88d'
     yellow:  '0xffcb6b'
@@ -262,7 +258,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.60
+background_opacity: 0.80
 # background_opacity: 0.95
 
 #selection:
@@ -281,7 +277,7 @@ cursor:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-   style: Beam 
+   style: Block 
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
