@@ -33,8 +33,8 @@
 URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
 
-*.transparent:     true 
-*.alpha: 0.8
+st.transparent:     true 
+st.alpha: 0.8
 URxvt*depth: 32
 URxvt.background: [91]#131313
 
@@ -47,13 +47,14 @@ URxvt.letterSpace: 0
 URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
 
-*.letterSpace: 4
+st.letterSpace: 4
 
 
 URxvt*depth: 32
 URxvt.background: [91]#131313
 
-*.font:Fira Code Medium:size=9.0
+st.font:Fira Code Medium:size=9.0
+dmenu.font:Fira Code Medium:size=9.0
 URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=10
 
 URxvt.letterSpace: 0
