@@ -4,7 +4,7 @@
 
 # terminal emulator
 alt + shift + Return
-   st -e bicon	
+		st
 
 # program launcher
 alt + u

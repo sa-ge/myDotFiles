@@ -26,12 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/run
-	media
-9
-d/run/media
-	sage
-1
 d/run/media/sage
 	سبحان الله
 3
@@ -71,6 +65,12 @@ d/run/media/sage/لا اله الا الله/نسخة j3 pro/New folder (99)/Tel
 d/run/media/sage/لا اله الا الله/نسخة j3 pro/New folder (99)/Telegram
 	Telegram Video
 4
+d/home/sage
+	..
+0
+d/home
+	sage
+2
 
 # Right window history (oldest to newest):
 D/home/sage
