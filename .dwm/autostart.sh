@@ -17,9 +17,7 @@ if [ -d /home/sage/.local/bin2 ] ; then
  done
  unset f
 fi
-
 exec compton&
 sleep 1s && $HOME/.screenlayout/.MultiMonitor.sh&
 sleep 1s && exec nitrogen --restore
-cd
-#st -e  echo "switch to another Terminal Emulator sleep 10s"  sleep 10s 
+#st -e  echo "switch to another Terminal Emulator sleep 10s"  sleep 10s

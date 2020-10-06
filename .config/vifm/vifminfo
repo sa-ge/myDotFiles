@@ -26,9 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/run/media/sage
-	سبحان الله
-3
 d/run/media/sage/سبحان الله
 	..
 0
@@ -71,6 +68,9 @@ d/home/sage
 d/home
 	sage
 2
+d/home/sage
+	..
+0
 
 # Right window history (oldest to newest):
 D/home/sage
