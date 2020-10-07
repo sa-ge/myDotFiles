@@ -4,7 +4,7 @@
 # execute all .sh files in /sage/.local/bin/*.sh
 
 
-exec xautolock -time 1 -locker slock&
+exec xautolock -time 5 -locker slock&
 if [ -d /home/sage/.local/bin ] ; then
  for f in /home/sage/.local/bin/?*.sh ; do
  [ -x "$f" ] && . "$f"

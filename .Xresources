@@ -4,7 +4,9 @@
 *.xterm-256color:
 ! special colors
 *.foreground:  #d6dbe5
-*.background:  #131313
+*.background:  #1C1C1C
+
+dmenu.background:  #000000
 ! black
 *.color0:      #1f1f1f
 *.color8:      #645959
@@ -19,6 +21,7 @@
 *.color11:     #f3bd09
 ! blue
 *.color4:      #2a84d2
+
 *.color12:     #ff557f
 ! magenta
 *.color5:      #4e5ab7
@@ -34,7 +37,6 @@ URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
 
 st.transparent:     true 
-st.alpha: 0.8
 URxvt*depth: 32
 URxvt.background: [91]#131313
 
@@ -57,6 +59,5 @@ st.font:Fira Code Medium:size=9.0
 dmenu.font:Fira Code Medium:size=9.0
 URxvt.font: xft:DejaVu Sans Mono for Powerline:pixelsize=10
 
-URxvt.letterSpace: 0
-*antialias:  true
-*autohint:   true
+*.antialias:  true
+*.autohint:   true
