@@ -9,7 +9,8 @@
 #"st -e cava |  sleep 0.5s  | st -e bicon -e cmus"
  
 #Mod1 + shift +   
-
+"wifi-dmenu"
+Print
 "st -e htop"
 Mod4 + shift + h
 

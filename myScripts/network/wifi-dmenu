@@ -1,0 +1,78 @@
+#!/bin/sh
+
+        
+toggleWifi()
+{
+        toggleText=$1
+        isOn=$2
+        case $isOn in 0)
+        yesOrNo=$(echo "$toggleText" | dmenu -c -l 10 | sed "s/t.*/$isOn/" )
+                case $yesOrNo in 0)
+                         nmcli radio wifi on; return ;;
+                esac
+        if [ ${yesOrNo} := ""]; then
+                echo "null"
+        else  
+                echo "not null"
+        fi
+                ;;
+        
+        1)
+        yesOrNo=$(echo "$toggleText" | sed "s/t.*/$isOn/" )
+                case $yesOrNo in 1)
+                         nmcli radio wifi off
+                         echo "${toggleText}";;
+                esac ;;
+        esac 
+}
+getNetworksList()
+{
+fields=SSID,SECURITY,BSSID,IN-USE,BARS
+read -r -d '' var <<- EOM 
+toggle off
+rescan
+$(nmcli -fields $fields device wifi list |sed 's/ --  / Open/g;
+                                                s/\s*--.4/Hidden/g;
+                                                s/ \*   /     /g; 
+                                                s/--    /Hidden/g;
+                                                ')
+EOM
+echo "$var" 
+}
+showSelectedNetwork()
+{
+        getNetworksList | dmenu -c -l 10
+}
+main()
+{
+        wifiState="$(nmcli radio wifi)"
+        case "$wifiState" in "enabled")
+                selectedNetwork=$(showSelectedNetwork| sed "s/toggle.*/1/;s/rescan/2/;s/SSID/SSID/;")
+                echo $selectedNetwork
+                        case $selectedNetwork in 1)
+                        toggleWifi "toggle off" 1
+                        return
+                        ;;
+                        2) 
+                        nmcli device wifi rescan
+                        sleep 1s && showSelectedNetwork
+                        return
+                        esac 
+                        if [[ ! ${selectedNetwork:40:17} = "" ]]; then
+                                nmcli device wifi connect "${selectedNetwork:40:17}" 
+                                
+                        fi
+
+                        ;;
+                "disabled")
+                isSelected=$(toggleWifi "toggle on" 0)
+                if [[ ${isSelected} = "null" ]]; then
+                        return                 
+                else
+                       sleep 1s && showSelectedNetwork
+                fi
+        esac
+}
+main
+
+
