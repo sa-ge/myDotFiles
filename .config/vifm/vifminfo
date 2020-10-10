@@ -26,9 +26,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/run/media/sage/سبحان الله
-	..
-0
 d/run/media/sage
 	لا اله الا الله
 4
@@ -69,8 +66,11 @@ d/home
 	sage
 2
 d/home/sage
-	..
-0
+	Documents
+2
+d/home/sage/Documents
+	Temeplets resume
+1
 
 # Right window history (oldest to newest):
 D/home/sage
