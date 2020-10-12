@@ -44,6 +44,15 @@ main()
         wifiState="$(nmcli radio wifi)"
         case "$wifiState" in "enabled")
                 selectedNetwork=$(showSelectedNetwork| sed "s/toggle.*/1/;s/rescan/2/;s/SSID/SSID/;")
+                isLocked="${selectedNetwork:29:4}"
+                if [[ ! ${isLocked} = "Open" ]]; then
+                        echo "open"
+                        if [[ ! ${isLocked} = "" ]]; then
+                                echo "unlock"
+                        password=$(echo | dmenu -c -l 10 -p "Enter the password for ${selectedNetwork:0:29}")
+                        nmcli device wifi connect "${selectedNetwork:40:17}" password "${password}" 
+                        fi
+                fi
                 echo $selectedNetwork
                         case $selectedNetwork in 1)
                         toggleWifi "toggle off" 1
@@ -55,8 +64,8 @@ main()
                         return
                         esac 
                         if [[ ! ${selectedNetwork:40:17} = "" ]]; then
+                                echo ${selectedNetwork:40:17}
                                 nmcli device wifi connect "${selectedNetwork:40:17}" 
-                                
                         fi
 
                         ;;

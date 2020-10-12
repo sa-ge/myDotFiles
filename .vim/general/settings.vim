@@ -105,12 +105,7 @@ set background=dark
 " auto complete
 "autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
-" auto complete with deoplete
-"let g:deoplete#enable_at_startup = 1
-"let g:autocomplete_flow#insert_paren_after_function = 0
-"call deoplete#custom#option('ignore_sources', {'php': ['omni']})
-"autocmd BufEnter * call ncm2#enable_for_buffer()
-"set completeopt=noinsert,menuone,noselect
+
 " lightline
 set noshowmode
 
@@ -155,45 +150,7 @@ let g:NERDTreeWinSize=38
   highlight StatusLine       ctermfg=7    ctermbg=8       cterm=none
   highlight NERDTreeClosable ctermfg=2
   highlight NERDTreeOpenable ctermfg=8
-" highlight TabLine          ctermfg=244     ctermbg=234     cterm=none
-" highlight TablineSel       ctermfg=0       ctermbg=247     cterm=none
-"  highlight String           ctermfg=9   ctermbg=none    cterm=none
 
-
-" highlight WildMenu         ctermfg=0       ctermbg=80      cterm=none
-" highlight Folded           ctermfg=103     ctermbg=234     cterm=none
-" highlight FoldColumn       ctermfg=103     ctermbg=234     cterm=none
-" highlight DiffAdd          ctermfg=none    ctermbg=23      cterm=none
-" highlight DiffChange       ctermfg=none    ctermbg=56      cterm=none
-" hihlight DiffDelete       ctermfg=168     ctermbg=96      cterm=none
-" highlight DiffText         ctermfg=0       ctermbg=80      cterm=none
-" highlight SignColumn       ctermfg=244     ctermbg=235     cterm=none
-" highlight Conceal          ctermfg=251     ctermbg=none    cterm=none
-" highlight SpellBad         ctermfg=168     ctermbg=none    cterm=underline
-" highlight SpellCap         ctermfg=80      ctermbg=none    cterm=underline
-" highlight SpellRare        ctermfg=121     ctermbg=none    cterm=underline
-" highlight SpellLocal       ctermfg=186     ctermbg=none    cterm=underline
-" highlight Pmenu            ctermfg=251     ctermbg=234     cterm=none
-" highlight PmenuSel         ctermfg=0       ctermbg=111     cterm=none
-" highlight PmenuSbar        ctermfg=206     ctermbg=235     cterm=none
-" highlight PmenuThumb       ctermfg=235     ctermbg=206     cterm=none
-" highlight TablineFill      ctermfg=244     ctermbg=234     cterm=none
-" highlight CursorColumn     ctermfg=none    ctermbg=236     cterm=none
-" highlight CursorLine       ctermfg=none    ctermbg=236     cterm=none
-" highlight ColorColumn      ctermfg=none    ctermbg=236     cterm=none
-" highlight Cursor           ctermfg=0       ctermbg=5       cterm=none
-" highlight htmlEndTag       ctermfg=74     ctermbg=none    cterm=none
-" highlight xmlEndTag        ctermfg=114     ctermbg=none    cterm=none
-
-
-
-"set shortmess+=c
-
-
-" live server
-
-"   let g:bracey_auto_start_browser = 1
-"   let g:bracey_eval_on_save = 1
-"   let g:bracey_refresh_on_save = 1
-"   let g:bracey_server_port = 9002
-
+  " highlighting spaces at end of the line 
+    
+ " set listchars=trail:*

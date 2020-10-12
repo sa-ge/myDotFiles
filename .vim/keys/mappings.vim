@@ -12,7 +12,6 @@ nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
 
-
 " Alternate way to save
 nnoremap <leader>w :w<CR>
 "nnoremap <C-s> :w<CR>
@@ -26,50 +25,38 @@ inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 " Better tabbing
 vnoremap < <gv
 vnoremap > >gv
+
 " Better window navigation
 "nnoremap <C-h> <C-w>h
 "nnoremap <C-j> <C-w>j
 "nnoremap <C-k> <C-w>k
 "nnoremap <C-l> <C-w>l
 
-
 " arraw keys mapps to nob
-
-
 imap <Down>    <Nop>
 imap <Up>      <Nop>
 imap <Right>   <Nop>
 imap <Left>    <Nop>
 
-
 nmap <Down> ddp
 nmap <Up> ddkP
-
 
 " dublicate the line with shift and D
 nmap <S-D> <S-v>yp
 
-
-
 "Move through split window
-
 nmap <leader>k  :wincmd k<CR>
 nmap <leader>j  :wincmd j<CR>
 nmap <leader>h  :wincmd h<CR>
 nmap <leader>l  :wincmd l<CR>
-
-
 
 "Resizing splits
 nmap <silent><leader>+  :vertical resize +5<CR>
 nmap <silent><leader>-  :vertical resize -5<CR>
 "nmap <leader>o :
 
-
 "nmap <silent> s* :let @/='\<'.expand('<cword>').'\>'<CR>cgn
-
 " Openning
-
 nmap <leader>n :NERDTreeToggle<CR>
 
 nmap <leader>e :bprevious<CR>:bd#<CR>
@@ -78,99 +65,23 @@ nmap <leader>e :bprevious<CR>:bd#<CR>
 nmap // :BLines<CR>
 nmap /// :Rg!<CR>
 nmap ,, :Files<CR>
-
-
-
 map <C-n> :NERDTreeToggle<CR>
-
-
-
 
 imap <C-l> <Plug>(coc-snippets-expand)
 let g:coc_snippet_next= '<c-j>'
 let g:coc_snippet_prev = '<c-k>'
 
-
-
-
 " Undo tree show
 nnoremap <silent><leader>u :UndotreeShow<CR>
-
 inoremap <silent><C-j> <C-o>A
 imap <silent><C-k> <M-n>
 imap <M> <C>
-
 
 " Go TO code navigation
    nmap <silent> gd <Plug>(coc-definition)
    nmap <silent> gy <Plug>(coc-type-definition)
    nmap <silent> gi <Plug>(coc-implementation)
    nmap <silent> gr <plug>(coc-references)
-   nmap <leader>rr <plug>(coc-rename)
-
-
-vmap <leader>y :!xclip -f -sel clip<CR>
-map  <leader>p mz:-1r !xclip -o -sel clip<CR>
-
-
-
-
-" Trigger configuration. You need to change this to something else than <tab> if you use https://github.com/Valloric/YouCompleteMe.
-"       let g:UltiSnipsExpandTrigger="<C-l>"
-"       let g:UltiSnipsJumpForwardTrigger="<C-j>"
-"       let g:UltiSnipsJumpBackwardTrigger="<C-k>"
-"       " If you want :UltiSnipsEdit to split your window.
-"       let g:UltiSnipsEditSplit="vertical"
-
-
-"augroup ncm2
-"  au!
-"  autocmd BufEnter * call ncm2#enable_for_buffer()
-"  au User Ncm2PopupOpen set completeopt=noinsert,menuone,noselect
-"  au User Ncm2PopupClose set completeopt=menuone
-"augroup END
-
-" parameter expansion for selected entry via Enter
-"inoremap <silent> <expr> <CR> (pumvisible() ? ncm2_ultisnips#expand_or("\<CR>", 'n') : "\<CR>")
-
-" cycle through completion entries with tab/shift+tab
-"inoremap <expr> <TAB> pumvisible() ? "\<c-n>" : "\<TAB>"
-"inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<TAB>"
-
-
-" phpactor 
-" Select range based on AST
-"   nmap <silent><Leader>r <Plug>(coc-range-select)
-"   xmap <silent><Leader>r <Plug>(coc-range-select)
-
-"   " Navigations
-"   nmap <Leader>o <Plug>(coc-definition)
-"   nmap <Leader>O <Plug>(coc-type-definition)
-"   nmap <Leader>I <Plug>(coc-implementation)
-"   nmap <Leader>R <Plug>(coc-references)
-
-"   " Hover
-"   nmap K :call <SID>show_documentation()<CR>
-"   inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-"   function! s:show_documentation()
-"     if (index(['vim','help'], &filetype) >= 0)
-"       execute 'h '.expand('<cword>')
-"     else
-"       call CocAction('doHover')
-"     endif
-"   endfunction
-
-"   " Text objects for functions and classes (uses document symbol provider)
-"   xmap if <Plug>(coc-funcobj-i)
-"   omap if <Plug>(coc-funcobj-i)
-"   xmap af <Plug>(coc-funcobj-a)
-"   omap af <Plug>(coc-funcobj-a)
-"   xmap ic <Plug>(coc-classobj-i)
-"   omap ic <Plug>(coc-classobj-i)
-"   xmap ac <Plug>(coc-classobj-a)
-"   omap ac <Plug>(coc-classobj-a)
-"   autocmd CursorHold * silent call CocActionAsync('highlight')
-
-"let g:coc_snippet_next = '<tab>'
-
-
+   nmap <silent> rr <plug>(coc-rename)
+   vmap <leader>y :!xclip -f -sel clip<CR>
+   map  <leader>p mz:-1r !xclip -o -sel clip<CR>
