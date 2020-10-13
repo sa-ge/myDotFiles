@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sage/.oh-my-zsh"
-
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 ZSH_THEME="gnzhme"
 
 plugins=(git zsh-autosuggestions)
@@ -9,7 +9,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="vim ~/.zshrc"
 alias lmp="sudo /opt/lampp/manager-linux-x64.run"
-alias vi="vim"
+alias vi="nvim"
 alias ls="lsd"
 alias docs="cd /opt/lampp/docs"
 

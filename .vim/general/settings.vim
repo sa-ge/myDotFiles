@@ -43,7 +43,7 @@ set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
-set updatetime=300                      " Faster completion
+set updatetime=50                       " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamed                   " Copy paste between vim and everything else
@@ -111,14 +111,17 @@ set noshowmode
 
 " help your rg to know the root directory and use git ignore
 
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 }}
+
 if executable('Rg')
     let g:Rg_derive_root='true'
 endif
-let g:ctrlp_user_command = ['.git/','git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
+" changing the position of fzf window when using it
+let g:ctrlp_user_command = ['.git/','git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let $FZF_DEFAULT_OPTS='--reverse'
 
 "always show status bar
-
 "Use spaces instead of tabs
 set expandtab
 "Be smart when using tabs
@@ -151,6 +154,7 @@ let g:NERDTreeWinSize=38
   highlight NERDTreeClosable ctermfg=2
   highlight NERDTreeOpenable ctermfg=8
 
+  highlight ColorColumn ctermbg=0 guibg=lightgray
   " highlighting spaces at end of the line 
     
  " set listchars=trail:*

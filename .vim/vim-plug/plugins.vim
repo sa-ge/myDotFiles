@@ -46,7 +46,7 @@ call plug#begin('~/.vim/autoload/plugged')
    " Plug 'roxma/nvim-yarp'
     "Plug 'roxma/vim-hug-neovim-rpc'
     "Plug 'kristijanhusak/deoplete-phpactor'
-    Plug 'phpactor/phpactor', {'do': 'composer install', 'for': 'php'}
+    " Plug 'phpactor/phpactor', {'do': 'composer install', 'for': 'php'}
 
     " python
     "Plug 'deoplete-plugins/deoplete-jedi'

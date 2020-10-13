@@ -6,8 +6,9 @@ xbindkeys
 
 setxkbmap -layout us,ara -option grp:alt_caps_toggle
 
-
 # change function between caps and escape - need it for vim.
-setxkbmap -option caps:escape 
+#setxkbmap -option caps:escape 
+
+#setxkbmap -option XF86AudioNext:F5
 
 

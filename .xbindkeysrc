@@ -4,7 +4,6 @@
 #"xdotool key MOD2+F7"
 #  Mod2 + F7
 
-
 #shortcuts apps 
 #"st -e cava |  sleep 0.5s  | st -e bicon -e cmus"
  

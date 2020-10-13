@@ -76,6 +76,7 @@ nnoremap <silent><leader>u :UndotreeShow<CR>
 inoremap <silent><C-j> <C-o>A
 imap <silent><C-k> <M-n>
 imap <M> <C>
+imap <ESC> <ESC>l
 
 " Go TO code navigation
    nmap <silent> gd <Plug>(coc-definition)
@@ -85,3 +86,8 @@ imap <M> <C>
    nmap <silent> rr <plug>(coc-rename)
    vmap <leader>y :!xclip -f -sel clip<CR>
    map  <leader>p mz:-1r !xclip -o -sel clip<CR>
+
+nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>
+"nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
+
