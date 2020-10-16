@@ -51,9 +51,9 @@ set path+=**
 set wildmenu
 
 " change cursor shape when entering insert mode
-let &t_SI = "\<esc>[5 q"
-let &t_EI = "\<esc>[2 q"
-let &t_SR = "\<esc>[3 q"
+"   let &t_SI = "\<esc>[5 q"
+"   let &t_EI = "\<esc>[2 q"
+"   let &t_SR = "\<esc>[3 q"
 
 " no swap file && record changes
 
@@ -102,7 +102,13 @@ set background=dark
 
 
 
-" auto complete
+" auto complete coc
+if has("patch-8.1.1564")
+    set signcolumn=number
+else
+    set signcolumn=yes
+endif
+
 "autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 

@@ -71,6 +71,10 @@ imap <C-l> <Plug>(coc-snippets-expand)
 let g:coc_snippet_next= '<c-j>'
 let g:coc_snippet_prev = '<c-k>'
 
+imap <C-j> <Plug>(coc-snippets-expand-jump)
+imap <leader>x <Plug>(coc-convert-snippet)
+
+
 " Undo tree show
 nnoremap <silent><leader>u :UndotreeShow<CR>
 inoremap <silent><C-j> <C-o>A
@@ -90,4 +94,3 @@ imap <ESC> <ESC>l
 nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>
 "nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
-
