@@ -15,7 +15,7 @@ alias docs="cd /opt/lampp/docs"
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias optirun="primusrun"
+#alias optirun="primusrun"
 alias nmon="nmcli radio wifi on"
 alias nmoff="nmcli radio wifi off"
 alias nmshow="nmcli radio wifi"
