@@ -518,4 +518,4 @@ c.colors.tabs.pinned.selected.even.fg = '#d8d8d8'
 c.colors.tabs.pinned.selected.even.bg = '#383838'
 
 
-config.set("colors.webpage.darkmode.enabled", True)
+#config.set("colors.webpage.darkmode.enabled", True)

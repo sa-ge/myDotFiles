@@ -49,6 +49,7 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamed                   " Copy paste between vim and everything else
 set path+=**
 set wildmenu
+set nocompatible
 
 " change cursor shape when entering insert mode
 "   let &t_SI = "\<esc>[5 q"

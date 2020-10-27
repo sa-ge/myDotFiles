@@ -69,8 +69,7 @@ map <C-n> :NERDTreeToggle<CR>
 
 imap <C-l> <Plug>(coc-snippets-expand)
 let g:coc_snippet_next= '<c-j>'
-let g:coc_snippet_prev = '<c-k>'
-
+let g:coc_snippet_prev= '<c-k>'
 imap <C-j> <Plug>(coc-snippets-expand-jump)
 "imap <leader>x <Plug>(coc-convert-snippet)
 
@@ -91,6 +90,6 @@ imap <ESC> <ESC>l
    vmap <leader>y :!xclip -f -sel clip<CR>
    map  <leader>p mz:-1r !xclip -o -sel clip<CR>
 
-nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>
+"nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>
 "nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
-nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
+"nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>

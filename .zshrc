@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sage/.oh-my-zsh"
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+export _JAVA_AWT_WM_NONREPARENTING=1
 ZSH_THEME="gnzhme"
 
 plugins=(git zsh-autosuggestions)
