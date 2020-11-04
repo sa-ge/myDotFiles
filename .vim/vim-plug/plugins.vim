@@ -81,7 +81,7 @@ call plug#begin('~/.vim/autoload/plugged')
 
      " sippets
      Plug 'honza/vim-snippets'
-    " Plug 'SirVer/ultisnips'
+     Plug 'SirVer/ultisnips'
 
      " git integration
      "Plug 'mhinz/vim-signify'

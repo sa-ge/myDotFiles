@@ -67,10 +67,10 @@ nmap /// :Rg!<CR>
 nmap ,, :Files<CR>
 map <C-n> :NERDTreeToggle<CR>
 
-imap <C-l> <Plug>(coc-snippets-expand)
-let g:coc_snippet_next= '<c-j>'
-let g:coc_snippet_prev= '<c-k>'
-imap <C-j> <Plug>(coc-snippets-expand-jump)
+"imap <C-l> <Plug>(coc-snippets-expand)
+"let g:coc_snippet_next= '<c-j>'
+"let g:coc_snippet_prev= '<c-k>'
+"imap <C-j> <Plug>(coc-snippets-expand-jump)
 "imap <leader>x <Plug>(coc-convert-snippet)
 
 
@@ -93,3 +93,11 @@ imap <ESC> <ESC>l
 "nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>
 "nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
 "nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
+"
+"
+"
+" snippets
+let g:UltiSnipsExpandTrigger="<c-l>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsEditSplit="vertical"
