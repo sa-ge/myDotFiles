@@ -3,6 +3,7 @@ clear lock
 keycode 66 = Escape
 keycode 9 = Caps_Lock
 
+
 keycode 96 = XF86MonBrightnessUp
 keycode 233 = F12
 
