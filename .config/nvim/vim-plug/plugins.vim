@@ -33,7 +33,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
    " Plug 'neoclide/coc.nvim', {'branch': 'release'}
     "Plug 'padawan-php/deoplete-padawan', {'do': 'composer install'}
-    Plug 'Shougo/deoplete.nvim'
+    "Plug 'Shougo/deoplete.nvim'
 "   Plug 'roxma/LanguageServer-php-neovim', {'do': 'composer install --no-dev -o && composer run-script parse-stubs'}
  "   Plug 'roxma/nvim-completion-manager'
    " Plug 'roxma/ncm2-phpactor'
@@ -43,8 +43,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'ncm2/ncm2'
     "Plug 'roxma/nvim-yarp'
     "Plug 'roxma/vim-hug-neovim-rpc'
-    Plug 'kristijanhusak/deoplete-phpactor'
-    Plug 'phpactor/phpactor', {'do': 'composer install', 'for': 'php'}
+    "Plug 'kristijanhusak/deoplete-phpactor'
+    "Plug 'phpactor/phpactor', {'do': 'composer install', 'for': 'php'}
     "Plug 'phpactor/ncm2-phpactor', {'for': 'php'}
 
 
